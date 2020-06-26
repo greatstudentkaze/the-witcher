@@ -1,3 +1,119 @@
+@font-face {
+  font-family: 'MasonChronicles';
+  src: url('../fonts/MasonChronicles.woff') format('woff'),
+  url('../fonts/MasonChronicles.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 *, *::after, *::before {
   box-sizing: border-box;
+}
+
+body {
+  background-color: #141218;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  //todo добавить внутренние отступы чтобы на расширении меньше 1140 не прилипал к краям
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  margin-bottom: 90px;
+
+  &__menu {
+    margin-left: 67px;
+    margin-right: auto;
+  }
+  &__menu-link {
+    margin-right: 24px;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  &__social-link {
+    margin-left: 20px;
+    text-decoration: none;
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+
+  &__genre {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__rating-stars {
+    display: flex;
+  }
+  &__rating-stars img {
+    margin-right: 4px;
+  }
+  &__rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__rating-number {
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-family: 'MasonChronicles', serif;
+    font-size: 76px;
+    line-height: 89px;
+  }
+  &__description {
+    max-width: 458px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  &__watch-button {
+    padding: 22px 72px;
+    background: #9D2929;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+  }
+  &__play-button {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    border: none;
+    background: #9D2929;
+  }
+  &__play-button img {
+    transform: translateX(5px);
+  }
+  &__play-button::after {
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    left: -16px;
+    content: '';
+    width: 132px;
+    height: 132px;
+    background: #9D2929;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
 }

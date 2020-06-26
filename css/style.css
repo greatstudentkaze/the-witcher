@@ -1,4 +1,97 @@
+@font-face {
+  font-family: 'MasonChronicles';
+  src: url("../fonts/MasonChronicles.woff") format("woff"), url("../fonts/MasonChronicles.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
 *, *::after, *::before {
   box-sizing: border-box; }
+
+body {
+  background-color: #141218;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  margin-bottom: 90px; }
+  .header__menu {
+    margin-left: 67px;
+    margin-right: auto; }
+  .header__menu-link {
+    margin-right: 24px;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #ffffff; }
+  .header__social-link {
+    margin-left: 20px;
+    text-decoration: none; }
+
+.main {
+  display: flex;
+  align-items: center; }
+  .main__genre {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 16px; }
+  .main__rating-stars {
+    display: flex; }
+  .main__rating-stars img {
+    margin-right: 4px; }
+  .main__rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; }
+  .main__rating-number {
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 14px; }
+  .main__title {
+    margin-bottom: 10px;
+    font-family: 'MasonChronicles', serif;
+    font-size: 76px;
+    line-height: 89px; }
+  .main__description {
+    max-width: 458px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 150%; }
+  .main__watch-button {
+    padding: 22px 72px;
+    background: #9D2929;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none; }
+  .main__play-button {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    border: none;
+    background: #9D2929; }
+  .main__play-button img {
+    transform: translateX(5px); }
+  .main__play-button::after {
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    left: -16px;
+    content: '';
+    width: 132px;
+    height: 132px;
+    background: #9D2929;
+    border-radius: 50%;
+    opacity: 0.5; }
 
 /*# sourceMappingURL=style.css.map */
