@@ -7,6 +7,7 @@
     <title>Ведьмак</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -30,9 +31,9 @@
         <!-- /.container -->
     </header>
 
-    <main>
+    <main class="main">
         <div class="container">
-            <div class="main">
+            <div class="main__wrapper">
                 <div class="main__content">
                     <span class="main__genre">2019, фэнтези</span>
                     <div class="main__rating">
@@ -64,29 +65,57 @@
                     <img class="main__play-button-img" src="img/play.svg" alt="play">
                 </button>
             </div>
-            <!-- /.main -->
+            <!-- /.main__wrapper -->
+
             <div class="main__episodes">
-                <div class="main__episode main__episode--1">
-                    <span class="main__episode-subtitle">Серия #1</span>
-                    <h2 class="main__episode-title">Начало конца</h2>
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="main__episode main__episode--1">
+                                <span class="main__episode-subtitle">Серия #1</span>
+                                <h2 class="main__episode-title">Начало конца</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main__episode main__episode--2">
+                                <span class="main__episode-subtitle">Серия #2</span>
+                                <h2 class="main__episode-title">Четыре знака</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main__episode main__episode--3">
+                                <span class="main__episode-subtitle">Серия #3</span>
+                                <h2 class="main__episode-title">Lorem ipsum</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="main__episode main__episode--2">
-                    <span class="main__episode-subtitle">Серия #2</span>
-                    <h2 class="main__episode-title">Четыре знака</h2>
-                </div>
-
-                <div class="main__episodes-nav">
-                    <button class="main__episodes-nav-arrow"></button>
-                </div>
+                <button class="main__episodes-arrow"></button>
             </div>
-            <!-- /.main__series -->
-
         </div>
         <!-- /.container -->
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer__copyright">
+                    <span class="footer__copyright-text">© 2020 The Witcher. All right reserved.</span>
+                </div>
+                <nav class="footer__links">
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                    <a href="#" class="footer__link">Terms of Service</a>
+                    <a href="#" class="footer__link">Legal</a>
+                </nav>
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
 
-
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
