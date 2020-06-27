@@ -140,7 +140,7 @@ body {
     margin-right: 30px;
     width: 164px;
     height: 113px;
-    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%);
+    background-size: cover;
     border-radius: 8px;
   }
   &__episode-subtitle {
@@ -155,11 +155,27 @@ body {
   }
   &__episode--1 {
     background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("../img/episodes/1.jpg") no-repeat center;
-    background-size: cover;
   }
   &__episode--2 {
     background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("../img/episodes/2.jpg") no-repeat center;
-    background-size: cover;
+  }
+  &__episode--3 {
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("../img/episodes/3.jpg") no-repeat center;
+  }
+  &__episode--4 {
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("../img/episodes/4.jpg") no-repeat center;
+  }
+  &__episode--5 {
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("../img/episodes/5.jpg") no-repeat center;
+  }
+  &__episode--6 {
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("../img/episodes/6.jpg") no-repeat center;
+  }
+  &__episode--7 {
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("../img/episodes/7.jpg") no-repeat center;
+  }
+  &__episode--8 {
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("../img/episodes/8.jpg") no-repeat center;
   }
   &__episodes-arrow {
     width: 32px;
