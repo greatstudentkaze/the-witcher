@@ -256,7 +256,7 @@ footer {
 }
 @media (max-width: 540px) {
   .header {
-    z-index: 999;
+    z-index: 998;
     display: none;
     flex-direction: column;
     position: absolute;
@@ -296,6 +296,7 @@ footer {
     }
 
     &__menu-btn {
+      z-index: 999;
       display: block;
       position: absolute;
       top: 40px;
