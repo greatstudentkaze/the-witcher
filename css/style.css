@@ -40,6 +40,8 @@ body {
     line-height: 16px;
     text-decoration: none;
     color: #ffffff; }
+    .header__menu-link:hover {
+      color: #d73030; }
   .header__social-link {
     margin-left: 20px;
     text-decoration: none; }
@@ -93,6 +95,8 @@ body {
   animation-delay: 1s; }
   .main__watch-button:active {
     color: #fff; }
+  .main__watch-button:hover {
+    background: #af2f2f; }
 .main__play-button {
   display: flex;
   align-items: center;
@@ -183,6 +187,8 @@ footer {
     margin-left: 25px;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.4); }
+    .footer__link:hover {
+      color: rgba(255, 255, 255, 0.8); }
 
 @media (max-width: 760px) {
   .main__play-button {

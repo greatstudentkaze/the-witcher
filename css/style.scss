@@ -46,6 +46,10 @@ body {
     line-height: 16px;
     text-decoration: none;
     color: #ffffff;
+
+    &:hover {
+      color: #d73030;
+    }
   }
   &__social-link {
     margin-left: 20px;
@@ -119,6 +123,9 @@ body {
 
     &:active {
       color: #fff;
+    }
+    &:hover {
+      background: #af2f2f;
     }
   }
   &__play-button {
@@ -235,6 +242,9 @@ footer {
     text-decoration: none;
     color: rgba(255,255,255, 0.4);
 
+    &:hover {
+      color: rgba(255,255,255, 0.8);
+    }
   }
 }
 
