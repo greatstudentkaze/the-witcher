@@ -97,13 +97,22 @@ body {
     line-height: 150%;
   }
   &__watch-button {
+    display: inline-block;
     padding: 22px 72px;
     background: #9D2929;
     color: #ffffff;
+    text-decoration: none;
     border-radius: 8px;
     border: none;
+
+    &:active {
+      color: #fff;
+    }
   }
   &__play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     width: 100px;
     height: 100px;
@@ -203,14 +212,14 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
-  color: #727174;
+  color: rgba(255,255,255, 0.4);
   font-size: 14px;
   line-height: 20px;
 
   &__link {
     margin-left: 25px;
     text-decoration: none;
-    color: #727174;
+    color: rgba(255,255,255, 0.4);
 
   }
 }
@@ -242,7 +251,7 @@ footer {
     top: 0;
     width: 250px;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
     margin-bottom: 0;
     background: #9D2929;
     border-bottom-left-radius: 8px;

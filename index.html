@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -59,12 +60,12 @@
                         по Континенту. За тугой мешочек чеканных монет этот мужчина избавит вас от
                         всякой настырной нечисти — хоть от чудищ болотных, оборотней и даже заколдованных принцесс.
                     </p>
-                    <button class="main__watch-button">Смотреть онлайн</button>
+                    <a class="main__watch-button" data-fancybox href="https://www.youtube.com/watch?v=5uMDRKx8gTM">Смотреть трейлер</a>
                 </div>
                 <!-- /.main__content -->
-                <button class="main__play-button">
+                <a class="main__play-button" data-fancybox href="https://www.youtube.com/watch?v=5uMDRKx8gTM">
                     <img class="main__play-button-img" src="img/play.svg" alt="play">
-                </button>
+                </a>
             </div>
             <!-- /.main__wrapper -->
 
@@ -146,6 +147,8 @@
         <!-- /.container -->
     </footer>
 
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
 </body>
