@@ -21,9 +21,10 @@ body {
   font-weight: normal;
 }
 .container {
-  max-width: 1180px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 20px;
+  //padding: 0 20px;
+  width: 95%;
 }
 
 .header {
@@ -47,6 +48,9 @@ body {
   &__social-link {
     margin-left: 20px;
     text-decoration: none;
+  }
+  &__menu-btn {
+    display: none;
   }
 }
 
@@ -208,5 +212,127 @@ footer {
     text-decoration: none;
     color: #727174;
 
+  }
+}
+
+
+@media (max-width: 760px) {
+
+  .main__play-button {
+    display: none;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__copyright {
+      margin-bottom: 8px;
+    }
+    &__link:first-child {
+      margin-left: 0;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .header {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 250px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+    background: #9D2929;
+    border-bottom-left-radius: 8px;
+
+    &--active {
+      display: flex;
+    }
+
+    &__logo {
+      margin-bottom: 25px;
+    }
+    &__menu {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+    }
+    &__menu-link {
+      margin-right: 0;
+      margin-bottom: 17px;
+    }
+    &__social {
+      order: 1;
+      margin-bottom: 22px;
+    }
+    &__social-link:first-child {
+      margin-left: 0;
+    }
+
+    &__menu-btn {
+      display: block;
+      position: absolute;
+      top: 40px;
+      right: 35px;
+      width: 30px;
+      height: 2px;
+      background: #fff;
+      cursor: pointer;
+
+      &::before, &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -7px;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        transition: transform 0.25s;
+      }
+      &::after {
+        top: 7px;
+      }
+
+      &--active {
+        height: 0;
+
+        &::before {
+          top: 0;
+          transform: rotate(45deg);
+        }
+        &::after {
+          top: 0;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  .main {
+    &__wrapper {
+      margin-top: 196px;
+    }
+    &__title {
+      font-size: 56px;
+    }
+    &__episodes {
+      width: 75%;
+    }
+    &__episodes-arrow {
+      z-index: 999;
+      right: 25%;
+    }
+  }
+}
+@media (max-width: 374px) {
+  .main {
+    &__episodes-arrow {
+      z-index: 999;
+      right: 5%;
+    }
   }
 }
