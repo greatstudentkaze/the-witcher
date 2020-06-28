@@ -194,6 +194,7 @@ footer {
       margin-left: 0; } }
 @media (max-width: 540px) {
   .header {
+    z-index: 999;
     display: none;
     flex-direction: column;
     position: absolute;
